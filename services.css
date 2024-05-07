@@ -1,0 +1,76 @@
+/* Reset styles for lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid list styles */
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    gap: 20px; /* Gap between cards */
+}
+
+/* Project card styles */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card banner (image) styles */
+.card-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Card content styles */
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.card-meta-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-meta-item {
+    display: flex;
+    align-items: center;
+    color: #888;
+}
+
+.card-meta-item ion-icon {
+    font-size: 1rem;
+    margin-right: 5px;
+}

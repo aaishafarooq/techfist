@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="blog-container">
+        <div class="blog-post" onclick="showBlogDetail(1)">
+            <div class="blog-header">
+                <img src="./assets/images/hero-bg.jpg" alt="Blog Image" class="blog-image">
+                <div class="image-overlay">
+                    <p class="overlay-text">Home / Blog</p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <h2 class="blog-title">Mastering the Art of Coding</h2>
+                <p class="blog-meta">Aaisha &middot; 07 May 24 &middot; Software Engineering</p>
+                <p class="blog-summary">
+                    "Mastering the Art of Coding: A Comprehensive Guide to Choosing the Right Software Development Course"
+                    is your compass in the dynamic world of software development education. Whether you're a novice
+                    eager to embark on a coding journey or a seasoned programmer seeking to refine your skills, this
+                    guide offers invaluable insights to help you make an informed decision.
+                </p>
+            </div>
+        </div>
+        <!-- More blog posts -->
+
+        <div class="blog-content">
+            <h2 class="blog-title">Mobile App Development Courses: Building The Future Of Mobile Technology</h2>
+            <p class="blog-meta">Aaisha &middot; 07 May 24 &middot; Software Engineering</p>
+            <p class="blog-summary">
+                "Mobile App Development Courses: Building the Future of Mobile Technology
+                Mobile app development courses empower individuals to create innovative and 
+                user-friendly apps for Android, iOS, and cross-platform environments. 
+                Learn programming languages, UI/UX design, app testing, and app monetization to shape 
+                the future of mobile technology.
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <div class="blog-detail-container" style="display: none;">
+        <button onclick="hideBlogDetail()">Back</button>
+        <div class="blog-detail" id="blogDetail"></div>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>
