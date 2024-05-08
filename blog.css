@@ -1,53 +1,59 @@
-/* Reset styles */
-body, html {
+/* Apply general reset to all elements */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light background color */
 }
 
 .blog-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .blog-post {
+    width: calc(50% - 20px); /* Two columns with gap */
+    margin-bottom: 20px;
     cursor: pointer;
-    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 .blog-header {
     position: relative;
-    border-radius: 8px;
     overflow: hidden;
 }
 
 .blog-image {
-    width: 300%;
-    height: 300px; /* Adjust image height as needed */
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure images fill the container */
 }
 
 .image-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.overlay-text {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text */
+    color: #fff;
+    padding: 10px;
 }
 
 .blog-content {
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
 }
 
 .blog-title {
@@ -56,13 +62,37 @@ body, html {
 }
 
 .blog-meta {
+    color: #888;
     font-size: 0.9rem;
-    color: #666;
     margin-bottom: 10px;
 }
 
 .blog-summary {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+.blog-detail-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+    display: none;
+    z-index: 999;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.blog-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-post {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
