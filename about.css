@@ -1,0 +1,32 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/images/hero-bg.jpg');
+    color: white; /* Set text color to white */
+}
+
+/* Styling for the "About" section */
+.section.about {
+    padding: 50px 0; /* Add padding to top and bottom */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content p {
+    margin-bottom: 20px;
+}

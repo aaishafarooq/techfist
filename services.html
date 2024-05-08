@@ -4,121 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - TechFist</title>
+    <title>Our Services</title>
     <link rel="stylesheet" href="services.css">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: var(--white); /* Set your preferred background color */
+            color: var(--black-coral); /* Set text color */
+            background-image: url('./assets/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <!-- Back Button -->
-        <!-- <a href="index.html" class="back-link">&larr; Back</a> -->
-    </header>
-
-    <main class="container">
-        <section class="section project" aria-labelledby="project-label">
+    <div class="service-row">
+        <section id="services" class="section service">
             <div class="container">
-
-                <p class="section-subtitle" id="project-label">Our Services</p>
-
+          
+              <!-- Centered heading and description -->
+              <div class="services-heading">
                 <h2 class="h2 section-title">
-                    Explore our range of services tailored to your business needs.
+                  Our Services
                 </h2>
-
-                <ul class="grid-list">
-                    <!-- Service Cards -->
-
-                    <!-- Cloud Computing Card -->
-                    <li>
-                        <div class="project-card">
-                            <div class="card-banner img-holder" style="--width: 200; --height: 200;">
-                                <img src="./assets/images/cloud.jpg" width="200" height="200" loading="lazy"
-                                    alt="Cloud Computing" class="img-cover">
-                            </div>
-                            <div class="card-content">
-                                <h3 class="h3">
-                                    <a href="#" class="card-title">Cloud Computing</a>
-                                </h3>
-                                <p class="card-text">
-                                    Unlock the potential of cloud technology with our comprehensive solutions.
-                                </p>
-                                <ul class="card-meta-list">
-                                    <li class="card-meta-item">
-                                        <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-                                        <time class="meta-text" datetime="2024-05-06">May 6, 2024</time>
-                                    </li>
-                                    <li class="card-meta-item">
-                                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-                                        <span class="meta-text">Cloud Solutions</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Data Analytics Card -->
-                    <li>
-                        <div class="project-card">
-                            <div class="card-banner img-holder" style="--width: 560; --height: 350;">
-                                <img src="./assets/images/cloud.jpg" width="560" height="350" loading="lazy"
-                                    alt="Data Analytics" class="img-cover">
-                            </div>
-                            <div class="card-content">
-                                <h3 class="h3">
-                                    <a href="#" class="card-title">Data Analytics</a>
-                                </h3>
-                                <p class="card-text">
-                                    Extract valuable insights from data to drive informed decisions.
-                                </p>
-                                <ul class="card-meta-list">
-                                    <li class="card-meta-item">
-                                        <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-                                        <time class="meta-text" datetime="2024-05-06">May 6, 2024</time>
-                                    </li>
-                                    <li class="card-meta-item">
-                                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-                                        <span class="meta-text">Data Analysis</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Robotic App Development Card -->
-                    <li>
-                        <div class="project-card">
-                            <div class="card-banner img-holder" style="--width: 560; --height: 350;">
-                                <img src="./assets/images/cloud.jpg" width="560" height="350" loading="lazy"
-                                    alt="Robotic App Development" class="img-cover">
-                            </div>
-                            <div class="card-content">
-                                <h3 class="h3">
-                                    <a href="#" class="card-title">Robotic App Development</a>
-                                </h3>
-                                <p class="card-text">
-                                    Innovate with robotics and automation tailored to your business requirements.
-                                </p>
-                                <ul class="card-meta-list">
-                                    <li class="card-meta-item">
-                                        <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-                                        <time class="meta-text" datetime="2024-05-06">May 6, 2024</time>
-                                    </li>
-                                    <li class="card-meta-item">
-                                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-                                        <span class="meta-text">Automation</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Add more service cards here -->
-
-                </ul>
+                <p class="section-description">
+                  Explore our software maintenance solutions
+                </p>
+              </div>
+          
+              <!-- Service Cards Row -->
+              <div class="service-row">
+                <div class="service-card">
+                  <img src="./assets/images/software.png" alt="Software Maintenance" class="service-image">
+                  <div class="service-content">
+                    <h3 class="card-title">Software Maintenance</h3>
+                    <p class="card-text">
+                        Our software support and maintenance services make sure that your software solutions are always current and operating at their best. For ongoing software upkeep and support, including bug fixes, updates, and troubleshooting, contact our team of specialists.
+                    </p>
+                    <!-- <a href="#" class="btn-text">
+                      <span class="span">Learn More</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a> -->
+                  </div>
+                </div>
+          
+                <div class="service-card">
+                  <img src="./assets/images/cloudservices.png" alt="Cloud Services" class="service-image">
+                  <div class="service-content">
+                    <h3 class="card-title">Cloud Services</h3>
+                    <p class="card-text">
+                        Our cloud services help businesses to streamline their operations by providing secure, scalable, and reliable cloud-based solutions. We offer a range of cloud services, including cloud hosting, cloud backup, and disaster recovery solutions.
+                    </p>
+                    <!-- <a href="#" class="btn-text">
+                      <span class="span">Learn More</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+          
             </div>
-        </section>
-    </main>
-
-    <script src="services.js"></script>
+          </section>
+    </div>
 </body>
 
 </html>

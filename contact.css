@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color:grey;
+    background-image: url('./assets/images/hero-bg.jpg');
 }
 
 .container {
@@ -15,12 +16,14 @@ body {
     background-color: aliceblue;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 8px rgba(18, 8, 163, 0.1); 
 }
 
 h2 {
     margin-bottom: 20px;
     text-align: center; 
+    font-style: normal;
+    color: #260155;
 }
 
 input,
@@ -35,7 +38,8 @@ button {
 }
 
 button {
-    background-color: #007bff;
+    
+    background-image: url('./assets/images/hero-bg.jpg');
     color: #fff;
     border: none;
     border-radius: 5px;
